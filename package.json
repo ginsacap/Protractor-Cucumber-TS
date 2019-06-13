@@ -4,11 +4,13 @@
   "description": "Practice project for Angular with Cucumber",
   "main": "index.js",
   "scripts": {
-    "test": "protractor JSFiles/config.js",
+    "test": "protractor ./JSFiles/config.js",
     "pretest": "tsc",
-    "protractro": "./node_modules/protractor/built/cli.js",
-    "webdriver-update": "./node_modules/.bin/webdriver-manager update",
-    "cucumbertest": "protractor JSFiles/config.js"
+    "Protractor":"./node_modules/protractor/built/cli.js",
+    "webdriver-manager":"./node_modules/protractor/node_modules/webdriver-manager update",
+    "webdriver-start":"./node_modules/protractor/node_modules/webdriver-manager start"
+    
+
   },
   "author": "Sankar Ginjupalli",
   "license": "ISC",

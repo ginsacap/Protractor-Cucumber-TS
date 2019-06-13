@@ -1,7 +1,7 @@
 import { Config, browser } from 'protractor';
 
 export let config: Config = {
-  seleniumAddress:"http://localhost:4444/wd/hub",
+  directConnect:true,
   capabilities: {
    browserName: 'chrome',
   },

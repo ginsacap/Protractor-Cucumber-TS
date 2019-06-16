@@ -1,3 +1,3 @@
 
 let { setDefaultTimeout } = require('cucumber');
-setDefaultTimeout(10 * 1000);
+setDefaultTimeout(15 * 1000);

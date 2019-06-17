@@ -5,19 +5,14 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "ts-node",
             "type": "node",
             "request": "launch",
-            "args": [
-                "${relativeFile}"
-            ],
-            "runtimeArgs": [
-                "-r",
-                "ts-node/register"
-            ],
-            "cwd": "${workspaceRoot}",
-            "protocol": "inspector",
-            "internalConsoleOptions": "openOnSessionStart"
+             "name": "Debug Protractor",
+            "program": "${workspaceFolder}/node_modules/protractor/built/cli.js",            
+            "args": ["${workspaceFolder}/JSFiles/config.js"],
+            "outFiles": [
+                "${workspaceFolder}/**/*.js"
+            ]
         }
     ]
 }

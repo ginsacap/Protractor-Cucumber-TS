@@ -4,8 +4,8 @@
   "description": "Practice project for Angular with Cucumber",
   "main": "index.js",
   "scripts": {
-    "test": "protractor JSFiles/config.js",
-    "pretest": "tsc"
+    "test": "protractor JSFiles/config.js"
+    
   },
   "author": "Sankar Ginjupalli",
   "license": "ISC",
@@ -14,17 +14,22 @@
     "@types/cucumber": "^4.0.5",
     "@types/jasmine": "2.8.7",
     "@types/jasminewd2": "2.0.3",
+    "@types/load-json-file": "5.1.0",
     "@types/node": "^12.0.8",
     "@types/protractor": "4.0.0",
     "@types/typescript": "^2.0.0",
+    "@types/xlsx": "0.0.36",
     "chai": "^4.2.0",
     "chai-as-promised": "^7.1.1",
     "cucumber": "^5.1.0",
     "cucumber-html-reporter": "^5.0.0",
     "jasmine": "^3.4.0",
+    "load-json-file": "^6.1.0",
     "protractor": "^5.4.2",
     "protractor-cucumber-framework": "^6.1.2",
     "ts-node": "^8.2.0",
-    "typescript": "^3.5.1"
+    "ts-xlsx": "0.0.11",
+    "typescript": "^3.5.1"   
+    
   }
 }

@@ -12,14 +12,21 @@ export let config: Config =
   framework: 'custom',
   frameworkPath: require.resolve('protractor-cucumber-framework'),  
   specs: [
-    '../Features/*.feature'
+    '../Features/Calculator.feature'
   ],
+  
+  suites: {
+    practice:[
+      './StepDefinitions/readFromJson.js',
+      './StepDefinitions/timeouts.js'
+    ]
+  } ,
 
   cucumberOpts:
   {
-    tags: ["@Smoke or @Regression"],
+    tags: ["@Test"],
     format: 'json:./cucumberreport.json',
-    require: ['./StepDefinitions/*.js'],
+    require: ['./StepDefinitions/CalculatorTest.js','./StepDefinitions/hooks.js','./StepDefinitions/CalculatorPage.js','./StepDefinitions/timeout.js'],
     //require:['path/to/step/definitions/**/*.steps.js'],
     strict: true
   },

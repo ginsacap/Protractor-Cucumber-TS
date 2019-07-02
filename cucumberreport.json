@@ -1,22 +1,22 @@
 [
   {
-    "description": "Verifying the Addition Functionality",
+    "description": "   Verifying the calculator functionality",
     "keyword": "Feature",
     "name": "Calculator Feature",
-    "line": 2,
+    "line": 1,
     "id": "calculator-feature",
     "tags": [],
-    "uri": "Features\\addNumbers.feature",
+    "uri": "Features\\Calculator.feature",
     "elements": [
       {
-        "id": "calculator-feature;adding-two-numbers",
+        "id": "calculator-feature;verifying-the-add-functionality",
         "keyword": "Scenario",
-        "line": 13,
-        "name": "Adding two numbers",
+        "line": 12,
+        "name": "Verifying the Add functionality",
         "tags": [
           {
-            "name": "@Regression",
-            "line": 5
+            "name": "@Test",
+            "line": 4
           }
         ],
         "type": "scenario",
@@ -25,57 +25,170 @@
             "keyword": "Before",
             "hidden": true,
             "match": {
-              "location": "StepDefinitions\\hooks.ts:5"
+              "location": "StepDefinitions\\hooks.ts:6"
             },
             "result": {
               "status": "passed",
-              "duration": 41000000
+              "duration": 6000000
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 7,
-            "name": "Open browser and enter \"http://juliemr.github.io/protractor-demo/\"",
+            "line": 6,
+            "name": "Open browser and enter url",
             "match": {
-              "location": "StepDefinitions\\AddNumbers.ts:12"
+              "location": "StepDefinitions\\CalculatorTest.ts:7"
             },
             "result": {
               "status": "passed",
-              "duration": 2595000000
+              "duration": 8000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "Enter numbers \"2\" and \"3\"",
+            "match": {
+              "location": "StepDefinitions\\CalculatorTest.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2381000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 8,
-            "name": "Enter two numbers \"2\" and \"3\"",
+            "name": "Select the \"ADDITION\" Click on Go button",
             "match": {
-              "location": "StepDefinitions\\AddNumbers.ts:17"
+              "location": "StepDefinitions\\CalculatorTest.ts:23"
             },
             "result": {
               "status": "passed",
-              "duration": 503000000
+              "duration": 284000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 9,
-            "name": "Verify the \"5\" after entering two numbers",
+            "name": "Capture the value from the table and Validate the \"5\"",
             "match": {
-              "location": "StepDefinitions\\AddNumbers.ts:27"
+              "location": "StepDefinitions\\CalculatorTest.ts:38"
             },
             "result": {
               "status": "passed",
-              "duration": 2762000000
+              "duration": 2698000000
             }
           },
           {
             "keyword": "After",
             "hidden": true,
             "match": {
-              "location": "StepDefinitions\\hooks.ts:10"
+              "location": "StepDefinitions\\hooks.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "calculator-feature;verifying-the-add-functionality",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "Verifying the Add functionality",
+        "tags": [
+          {
+            "name": "@Test",
+            "line": 4
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "StepDefinitions\\hooks.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "Open browser and enter url",
+            "match": {
+              "location": "StepDefinitions\\CalculatorTest.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "Enter numbers \"5\" and \"2\"",
+            "match": {
+              "location": "StepDefinitions\\CalculatorTest.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 683000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "Select the \"MULTIPLICATION\" Click on Go button",
+            "match": {
+              "location": "StepDefinitions\\CalculatorTest.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 328000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "Capture the value from the table and Validate the \"10\"",
+            "match": {
+              "location": "StepDefinitions\\CalculatorTest.ts:38"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2318000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "StepDefinitions\\hooks.ts:14"
             },
             "result": {
               "status": "passed",
@@ -90,20 +203,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2000000
+              "duration": 1000000
             }
           }
         ]
       },
       {
-        "id": "calculator-feature;adding-two-numbers",
+        "id": "calculator-feature;verifying-the-add-functionality",
         "keyword": "Scenario",
         "line": 14,
-        "name": "Adding two numbers",
+        "name": "Verifying the Add functionality",
         "tags": [
           {
-            "name": "@Regression",
-            "line": 5
+            "name": "@Test",
+            "line": 4
           }
         ],
         "type": "scenario",
@@ -112,57 +225,70 @@
             "keyword": "Before",
             "hidden": true,
             "match": {
-              "location": "StepDefinitions\\hooks.ts:5"
+              "location": "StepDefinitions\\hooks.ts:6"
             },
             "result": {
               "status": "passed",
-              "duration": 2000000
+              "duration": 1000000
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 7,
-            "name": "Open browser and enter \"http://juliemr.github.io/protractor-demo/\"",
+            "line": 6,
+            "name": "Open browser and enter url",
             "match": {
-              "location": "StepDefinitions\\AddNumbers.ts:12"
+              "location": "StepDefinitions\\CalculatorTest.ts:7"
             },
             "result": {
               "status": "passed",
-              "duration": 640000000
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "Enter numbers \"6\" and \"3\"",
+            "match": {
+              "location": "StepDefinitions\\CalculatorTest.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 587000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 8,
-            "name": "Enter two numbers \"4\" and \"5\"",
+            "name": "Select the \"DIVISION\" Click on Go button",
             "match": {
-              "location": "StepDefinitions\\AddNumbers.ts:17"
+              "location": "StepDefinitions\\CalculatorTest.ts:23"
             },
             "result": {
               "status": "passed",
-              "duration": 441000000
+              "duration": 330000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 9,
-            "name": "Verify the \"9\" after entering two numbers",
+            "name": "Capture the value from the table and Validate the \"2\"",
             "match": {
-              "location": "StepDefinitions\\AddNumbers.ts:27"
+              "location": "StepDefinitions\\CalculatorTest.ts:38"
             },
             "result": {
               "status": "passed",
-              "duration": 2373000000
+              "duration": 2110000000
             }
           },
           {
             "keyword": "After",
             "hidden": true,
             "match": {
-              "location": "StepDefinitions\\hooks.ts:10"
+              "location": "StepDefinitions\\hooks.ts:14"
             },
             "result": {
               "status": "passed",
@@ -178,182 +304,94 @@
             "result": {
               "status": "passed",
               "duration": 1000000
-            }
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "keyword": "Feature",
-    "name": "Verifying the home page of Angular JS",
-    "line": 2,
-    "id": "verifying-the-home-page-of-angular-js",
-    "tags": [],
-    "uri": "Features\\angulaPage.feature",
-    "elements": [
-      {
-        "id": "verifying-the-home-page-of-angular-js;validate-the-home-page-of-the-angular-js-website",
-        "keyword": "Scenario",
-        "line": 11,
-        "name": "Validate the Home page of the Angular JS website",
-        "tags": [
-          {
-            "name": "@Smoke",
-            "line": 3
-          }
-        ],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 5,
-            "name": "Open the browser and enter \"https://angularjs.org/\" to get the Home Page",
-            "match": {
-              "location": "StepDefinitions\\angularPage.ts:5"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 4500000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 6,
-            "name": "Click on header link",
-            "match": {
-              "location": "StepDefinitions\\angularPage.ts:10"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 3846000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 7,
-            "name": "Navigate to angular page",
-            "match": {
-              "location": "StepDefinitions\\angularPage.ts:14"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 58000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 8,
-            "name": "Enter \"Hello\" in search box.",
-            "match": {
-              "location": "StepDefinitions\\angularPage.ts:20"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 5617000000
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "match": {
-              "location": "StepDefinitions\\hooks.ts:10"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2000000
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "match": {
-              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
-            },
-            "result": {
-              "status": "passed"
             }
           }
         ]
       },
       {
-        "id": "verifying-the-home-page-of-angular-js;validate-the-home-page-of-the-angular-js-website",
+        "id": "calculator-feature;verifying-the-add-functionality",
         "keyword": "Scenario",
-        "line": 12,
-        "name": "Validate the Home page of the Angular JS website",
+        "line": 15,
+        "name": "Verifying the Add functionality",
         "tags": [
           {
-            "name": "@Smoke",
-            "line": 3
+            "name": "@Test",
+            "line": 4
           }
         ],
         "type": "scenario",
         "steps": [
           {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "StepDefinitions\\hooks.ts:6"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
             "arguments": [],
             "keyword": "Given ",
-            "line": 5,
-            "name": "Open the browser and enter \"https://angularjs.org/\" to get the Home Page",
+            "line": 6,
+            "name": "Open browser and enter url",
             "match": {
-              "location": "StepDefinitions\\angularPage.ts:5"
+              "location": "StepDefinitions\\CalculatorTest.ts:7"
             },
             "result": {
               "status": "passed",
-              "duration": 4068000000
+              "duration": 1000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 6,
-            "name": "Click on header link",
+            "line": 7,
+            "name": "Enter numbers \"10\" and \"4\"",
             "match": {
-              "location": "StepDefinitions\\angularPage.ts:10"
+              "location": "StepDefinitions\\CalculatorTest.ts:14"
             },
             "result": {
               "status": "passed",
-              "duration": 2387000000
+              "duration": 312000000
             }
           },
           {
             "arguments": [],
-            "keyword": "And ",
-            "line": 7,
-            "name": "Navigate to angular page",
+            "keyword": "When ",
+            "line": 8,
+            "name": "Select the \"SUBTRACTION\" Click on Go button",
             "match": {
-              "location": "StepDefinitions\\angularPage.ts:14"
+              "location": "StepDefinitions\\CalculatorTest.ts:23"
             },
             "result": {
               "status": "passed",
-              "duration": 969000000
+              "duration": 151000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 8,
-            "name": "Enter \"Hi\" in search box.",
+            "line": 9,
+            "name": "Capture the value from the table and Validate the \"6\"",
             "match": {
-              "location": "StepDefinitions\\angularPage.ts:20"
+              "location": "StepDefinitions\\CalculatorTest.ts:38"
             },
             "result": {
               "status": "passed",
-              "duration": 5463000000
+              "duration": 2075000000
             }
           },
           {
             "keyword": "After",
             "hidden": true,
             "match": {
-              "location": "StepDefinitions\\hooks.ts:10"
+              "location": "StepDefinitions\\hooks.ts:14"
             },
             "result": {
               "status": "passed",
-              "duration": 2000000
+              "duration": 1000000
             }
           },
           {

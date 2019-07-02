@@ -21,3 +21,4 @@ Then('Enter {string} in search box.', async (string) => {
   browser.sleep(5000);
   await browser.findElement(by.css("input[type = 'search']")).sendKeys(string);
 });
+
